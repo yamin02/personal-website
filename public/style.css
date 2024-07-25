@@ -19,13 +19,17 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: monospace;
   font-weight: normal;
-  font-size: 14px;
-  min-width: 320px;
+  font-size: 20px;
   position: relative;
   line-height: 1.6;
+  margin: 0px;
   -webkit-font-smoothing: antialised;
+}
+
+.aboutme{
+  margin: 70px;
 }
 
 body input:focus:required:invalid,
@@ -83,32 +87,37 @@ section {
   padding: 70px 0 80px;
 }
 section h2 {
-  text-align: center;
   text-transform: uppercase;
-  font-size: 24px;
-  margin: 0 0 15px 0;
+  font-size: 23px;
+  color: #555;
+  /* margin: 0 0 15px 0; */
 }
 section h2.personal_header {
-  font-size: 13px;
-  text-align: left;
+  font-size: 23px;
   margin-bottom: 30px;
+  margin-left: 0%;
   color: #555;
 }
+
 section h3 {
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 50px;
   margin-top: 0;
   margin-bottom: 35px;
 }
+.section_descr {
+  /* font-size: 16px; */
+  padding: 10px;
+}
+
 section .section_descr_wrapper {
   text-align: center;
 }
 section .section_descr_wrapper .section_descr {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 12px;
   position: relative;
   margin-bottom: 130px;
 }
@@ -117,7 +126,7 @@ section .section_descr_wrapper .section_descr::after {
   width: 150px;
   height: 1px;
   position: absolute;
-  top: 50px;
+  top: 60px;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -370,16 +379,21 @@ section.about .social_wrap li {
   padding: 0 5px;
 }
 
-section.cv .section_content .left {
+.left {
   border-right: 1px solid #d2d2d2;
   text-align: right;
+  margin-left: 100px ;
+  margin-right: 30px ;
 }
-section.cv .section_content .left h3 {
+.left h3 {
+  font-size: 25px;
   text-align: right;
 }
-section.cv .section_content .right {
+.right {
   border-left: 1px solid #d2d2d2;
   text-align: left;
+  margin-right: 100px ;
+  margin-left: 30px ;
 }
 section.cv .section_content .right h3 {
   text-align: left;
@@ -394,11 +408,12 @@ section.cv .section_content .icon {
 section.cv .section_content .item {
   margin-bottom: 30px;
 }
-section.cv .section_content .item .year {
+.year {
   display: inline-block;
   padding: 0 20px;
   border-radius: 2px;
   font-style: italic;
+  font-size: 20px;
   font-weight: 400;
 }
 section.cv .section_content .item .details {
@@ -410,180 +425,6 @@ section.cv .section_content .item .details strong {
   text-transform: uppercase;
 }
 
-section.portfolio .section_content ul,
-section.portfolio .section_content li {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-section.portfolio .section_content li {
-  display: inline-block;
-  margin: 0 20px;
-  text-transform: uppercase;
-  font-size: 13px;
-  cursor: pointer;
-  line-height: 2;
-}
-section.portfolio .section_content ul {
-  margin-bottom: 50px;
-}
-section.portfolio .section_content .mix {
-  display: none;
-}
-section.portfolio .section_content #portfolio_grid {
-  display: -webkit-flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: flex-start;
-}
-section.portfolio .section_content .portfolio_item {
-  position: relative;
-  padding: 0;
-}
-section.portfolio .section_content .portfolio_item img {
-  width: 100%;
-}
-section.portfolio .section_content .portfolio_item .details {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  text-align: center;
-  padding-top: 15%;
-  opacity: 0;
-  transition: all 0.5s;
-}
-section.portfolio .section_content .portfolio_item .details:hover {
-  opacity: 1;
-  padding-top: 20%;
-}
-section.portfolio .section_content .portfolio_item .details h3 {
-  color: #fff;
-  margin-bottom: 0;
-}
-section.portfolio .section_content .portfolio_item .details a {
-  background-color: transparent;
-  border: 1px solid #fff;
-  padding: 2px 20px;
-  display: inline-block;
-}
-section.portfolio .section_content .portfolio_item .details a:hover {
-  text-decoration: none;
-}
-section.portfolio .section_content .portfolio_item .details a:focus {
-  text-decoration: none;
-}
-
-.mfp-container .mfp-content {
-  text-align: center;
-}
-.mfp-container .mfp-content .more {
-  position: relative;
-  display: inline-block;
-  background-color: #fff;
-  max-width: 500px;
-  padding: 10px 0 0px;
-}
-.mfp-container .mfp-content .more p,
-.mfp-container .mfp-content .more h3 {
-  padding: 20px;
-  padding-bottom: 0;
-  text-align: left;
-}
-.mfp-container .mfp-content .more p {
-  margin-bottom: 25px;
-}
-.mfp-container .mfp-content .more h3 {
-  padding-bottom: 0px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-top: 20px;
-}
-.mfp-container .mfp-content .more img {
-  padding: 0;
-  width: 100%;
-}
-
-section.contacts .contact_box {
-  margin-bottom: 40px;
-}
-section.contacts .contact_box a:hover {
-  text-decoration: none;
-}
-section.contacts .contact_box h3 {
-  text-align: left;
-  color: #000;
-  margin-bottom: 0px;
-}
-section.contacts .contact_box a {
-  display: inline-block;
-  padding: 15px 0;
-}
-section.contacts .contact_box .icon {
-  font-size: 30px;
-}
-section.contacts .contact_box p {
-  font-size: 16px;
-}
-section.contacts .contact_box:nth-child(2) p {
-  font-family: RobotoRegular;
-  font-size: 16px;
-}
-section.contacts form .form-group {
-  display: block;
-  margin-bottom: 55px;
-}
-section.contacts form .form-group label {
-  display: block;
-}
-section.contacts form .form-group input {
-  display: block;
-  width: 100%;
-  border: 1px solid #ccc;
-  margin-top: 5px;
-  line-height: 40px;
-  text-indent: 15px;
-  font-size: 12px;
-}
-section.contacts form .form-group input:focus {
-  outline: none;
-}
-section.contacts form .form-group textarea {
-  display: block;
-  width: 100%;
-  border: 1px solid #ccc;
-  margin-top: 5px;
-  font-size: 12px;
-  line-height: 15px;
-  resize: none;
-  padding: 10px 20px;
-}
-section.contacts form .form-group textarea:focus {
-  outline: none;
-}
-section.contacts form button {
-  border: none;
-  color: #fff;
-  line-height: 40px;
-  padding: 0 25px;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-section.contacts form button:focus {
-  outline: none;
-}
-section.contacts .help-block.text-danger {
-  position: absolute;
-}
-section.contacts .help-block.text-danger ul {
-  padding: 0 0 0 20px;
-  font-size: 10px;
-}
 
 .main_footer .footer_wrapper {
   display: flex;
@@ -724,6 +565,7 @@ body .main_footer,
   color: #FF6347;
 }
 .top_mnu a {
+  text-decoration: none;
   letter-spacing: 4px;
 }
 
@@ -831,3 +673,82 @@ header .toggle_mnu {
   font-weight: 900;
   letter-spacing: 6px;
 }
+
+
+
+
+.offers {
+  font-weight: 400;
+  padding: 1rem;
+  border-radius: 2%;
+  color: white;
+  background-color: #222;
+  box-shadow: inset -1px 1px 40px 40px #00000040;
+  margin: 6px !important;
+  /* flex: 0 0 100%; Each div occupies the full width of the container */
+  max-width: 400px;
+  text-align: center;
+  /* min-width: 300px */
+}
+
+.tweet-image{
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: hidden;
+  /* height: 300px; */
+  /* width: 350px; */
+
+
+}
+
+.offers a{
+  color: rgb(240, 174, 151) !important;
+}
+
+.All-offers img{
+  width: 400px;
+  border-radius: 1%;
+  text-align: center;
+  height: 420px;
+  object-fit: cover;
+
+}
+.offers h4 {  
+  font-size: 16px;
+  line-height: 24px;
+}
+.offers p{
+  font-size: 15px;
+  color: rgb(195, 195, 195);
+}
+
+/* THIS ARE FOR THE SLIDING EFFECT OF THE OFFERS DIV */
+.All-offers {
+  margin-left: 10px;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.All-offers::-webkit-scrollbar {
+  display: none;
+  /* width: 10px; */
+  /* height: 4px; */
+}
+
+.All-offers::-webkit-scrollbar-track {
+  background: transparent;
+}
+.offers {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  transform-origin: center center;
+  transition: transform 0.3s; 
+}
+
+
+
