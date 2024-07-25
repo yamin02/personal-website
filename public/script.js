@@ -100,7 +100,7 @@ $(function() {
 	//=====================================
 	// https://pixelcog.github.io/parallax.js/
 	$('.main_head').parallax({
-		imageSrc: './bg01.jpg',
+		imageSrc: './bg01.webp',
 		parallax: "scroll",
 		zIndex: 1,
 		position: "top center"
@@ -108,6 +108,9 @@ $(function() {
 });
 
 $(window).load(function() {
+
+	$(".loader_image").delay(500).fadeOut();
+	$(".loader").delay(500).fadeOut("slow");
 
 	// //animation + waypoints plugin
 	// $(".text_wrapper h1").animated("fadeInDown", "fadeOutUp");
